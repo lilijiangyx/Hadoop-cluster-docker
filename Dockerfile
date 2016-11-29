@@ -38,10 +38,8 @@ RUN mv /tmp/ssh_config ~/.ssh/config && \
     mv /tmp/start-hadoop.sh ~/start-hadoop.sh && \
     mv /tmp/run-wordcount.sh ~/run-wordcount.sh
 
-RUN chmod +x ~/start-hadoop.sh && \
-    chmod +x ~/run-wordcount.sh && \
-    chmod +x $HADOOP_HOME/sbin/start-dfs.sh && \
-    chmod +x $HADOOP_HOME/sbin/start-yarn.sh 
+RUN chmod +x ~/*.sh && \
+    chmod +x $HADOOP_HOME/sbin/*.sh 
 
 # format namenode
 RUN /usr/local/hadoop/bin/hdfs namenode -format
