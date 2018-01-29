@@ -20,12 +20,13 @@ sudo docker network create --driver=bridge hadoop
 ```
 
 #####4. start container
-
+###### Linux/Mac OS
 ```
 cd hadoop-cluster-docker
 sudo ./start-container.sh
 ```
-
+###### Windows
+open the repo directory by powershell and run `.\start-container.ps1` 
 **output:**
 
 ```
@@ -81,3 +82,7 @@ hadoop master 目录 : /root/src/
 1. ./build_image.sh 构建你的新镜像 ( 修改 Dockerfile 后 )
 2. ./enter_master_bash.sh  进入hadoop_master 容器
 3. ./delete_all_container.sh  清空所有docker容器
+下面这些是windows的脚本
+1. ./build_image.ps1 构建你的新镜像 ( 修改 Dockerfile 后 )
+2. ./enter_master_bash.ps1  进入hadoop_master 容器
+3. ./delete_all_container.ps1  清空所有docker容器
