@@ -85,4 +85,4 @@ hadoop master 目录 : /root/src/
 下面这些是windows的脚本
 1. ./build_image.ps1 构建你的新镜像 ( 修改 Dockerfile 后 )
 2. ./enter_master_bash.ps1  进入hadoop_master 容器
-3. ./delete_all_container.ps1  清空所有docker容器
+3. ./delete_all_container.ps1  清空所有docker容器# Hadoop-cluster-docker
